@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <body>
+     <div th:fragment="content" id="listContent">
+         <div>
+             <table class="table table-bordered table-hover table-condensed editable-table demoTable">
+                 <colgroup>
+                     <col width="7%" />
+                     <col width="6%" />
+                     <col width="12%" />
+                     <col width="8%" />
+                     <col width="8%" />
+                     <col width="10%" />
+                     <col width="5%" />
+                     <col width="5%" />
+                     <col width="5%" />
+                     <col width="10%" />
+                     <col width="10%" />
+                     <col width="10%" />
+                     <col width="10%" />
+                 </colgroup>
+                 <thead>
+                 <tr>
+                     <th ng-click="table='phone';rev = !rev"><span class="editable-text">用户手机号</span><i class="fa" ng-class="{'fa-arrow-down':rev,'fa-arrow-up':!rev}"></i></th>
+                     <th ng-click="table='name';rev = !rev"><span class="editable-text">姓名</span><i class="fa" ng-class="{'fa-arrow-down':rev,'fa-arrow-up':!rev}"></i></th>
+                     <th><span class="editable-text">身份证号</span></th>
+                     <th><span class="editable-text">执照类别</span></th>
+                     <th><span class="editable-text">执照编号</span></th>
+                     <th ng-click="table='hospital';rev = !rev"><span class="editable-text">所在医院</span><i class="fa" ng-class="{'fa-arrow-down':rev,'fa-arrow-up':!rev}"></i></th>
+                     <th><span class="editable-text">身份证</span></th>
+                     <th><span class="editable-text">医师执照</span></th>
+                     <th><span class="editable-text">工作证</span></th>
+                     <th ng-click="table='time';rev = !rev"><span class="editable-text">申请时间</span><i class="fa" ng-class="{'fa-arrow-down':rev,'fa-arrow-up':!rev}"></i></th>
+                     <th><span class="editable-text">原因</span></th>
+                     <th><span class="editable-text">状态</span></th>
+                     <th><span class="editable-text">操作</span></th>
+                 </tr>
+                 </thead>
+                 <tbody>
+
+                 </tbody>
+                 <tr th:if="${not #lists.isEmpty(doctorDtos)}" th:each = "doctorDto : ${doctorDtos}" class="doctorTable">
+                     <!--| filter:{'phone':method.phone} : false |-->
+                     <!--filter:{'name':method.name} : false | filter:{'name':hospital} : false">-->
+                     <td>
+                         <span class="editable-text phoneClass" th:text="${doctorDto.doctorCertificatesBean.phone}">222</span>
+                     </td>
+                     <td>
+                         <span class="editable-text realNameClass" th:text="${doctorDto.doctorCertificatesBean.realName}">333</span>
+                     </td>
+                     <td th:switch="${doctorDto.doctorCertificatesBean.identifyStatus}">
+                         <input class="editable-text doctorIdClass" th:value="${doctorDto.doctorCertificatesBean.id}" type="hidden" />
+                         <input th:case="1" type="text" th:value="${doctorDto.doctorCertificatesBean.idcardNum}" placeholder="身份证号" class="form-control idcardNumClass"></input>
+                         <input th:case="4" type="text" th:value="${doctorDto.doctorCertificatesBean.idcardNum}" placeholder="身份证号" class="form-control idcardNumClass"></input>
+                         <input th:case="2" type="text" th:value="${doctorDto.doctorCertificatesBean.idcardNum}" placeholder="身份证号" class="form-control idcardNumClass" readonly="true"></input>
+                         <input th:case="3" type="text" th:value="${doctorDto.doctorCertificatesBean.idcardNum}" placeholder="身份证号" class="form-control idcardNumClass" readonly="true"></input>
+                         <input th:case="5" type="text" th:value="${doctorDto.doctorCertificatesBean.idcardNum}" placeholder="身份证号" class="form-control idcardNumClass" readonly="true"></input>
+                     </td>
+                     <td th:switch="${doctorDto.doctorCertificatesBean.identifyStatus}">
+                         <input th:case="1" type="text" th:value="${doctorDto.doctorCertificatesBean.licenseType}" placeholder="执照类别" class="form-control licenseTypeClass"></input>
+                         <input th:case="4" type="text" th:value="${doctorDto.doctorCertificatesBean.licenseType}" placeholder="执照类别" class="form-control licenseTypeClass"></input>
+                         <input th:case="2" type="text" th:value="${doctorDto.doctorCertificatesBean.licenseType}" placeholder="执照类别" class="form-control licenseTypeClass" readonly="true"></input>
+                         <input th:case="3" type="text" th:value="${doctorDto.doctorCertificatesBean.licenseType}" placeholder="执照类别" class="form-control licenseTypeClass" readonly="true"></input>
+                         <input th:case="5" type="text" th:value="${doctorDto.doctorCertificatesBean.licenseType}" placeholder="执照类别" class="form-control licenseTypeClass" readonly="true"></input>
+                     </td>
+                     <td th:switch="${doctorDto.doctorCertificatesBean.identifyStatus}">
+                         <input th:case="1" type="text" th:value="${doctorDto.doctorCertificatesBean.licenseCode}" placeholder="执照编号" class="form-control licenseCodeClass"></input>
+                         <input th:case="4" type="text" th:value="${doctorDto.doctorCertificatesBean.licenseCode}" placeholder="执照编号" class="form-control licenseCodeClass"></input>
+                         <input th:case="2" type="text" th:value="${doctorDto.doctorCertificatesBean.licenseCode}" placeholder="执照编号" class="form-control licenseCodeClass" readonly="true"></input>
+                         <input th:case="3" type="text" th:value="${doctorDto.doctorCertificatesBean.licenseCode}" placeholder="执照编号" class="form-control licenseCodeClass" readonly="true"></input>
+                         <input th:case="5" type="text" th:value="${doctorDto.doctorCertificatesBean.licenseCode}" placeholder="执照编号" class="form-control licenseCodeClass" readonly="true"></input>
+                     </td>
+                     <td>
+                         <span class="editable-text" th:text = "${doctorDto.doctorCertificatesBean.hospitalName}">4444</span>
+                     </td>
+                     <td>
+                         <button class="btn btn-info btn-xs" th:if="!${doctorDto.certificatePathDto.idCardF == '00001'}" th:onclick="'show_image(\'身份证正面\',\''+${doctorDto.certificatePathDto.idCardF}+'\',\'\',\'\')'">正面</button>
+                         <p style="height: 2px;"></p>
+                         <button class="btn btn-info btn-xs" th:if="!${doctorDto.certificatePathDto.idCardB == '00001'}" th:onclick="'show_image(\'身份证反面\',\''+${doctorDto.certificatePathDto.idCardB}+'\',\'\',\'\')'">反面</button>
+                     </td>
+                     <td>
+                         <button class="btn btn-info btn-xs" th:if="!${doctorDto.certificatePathDto.physicilF == '00001'}" th:onclick="'show_image(\'医师执照正面\',\''+${doctorDto.certificatePathDto.physicilF}+'\',\'\',\'\')'">正面</button>
+                         <p style="height: 2px;"></p>
+                         <button class="btn btn-info btn-xs" th:if="!${doctorDto.certificatePathDto.physicilB == '00001'}" th:onclick="'show_image(\'医师执照反面\',\''+${doctorDto.certificatePathDto.physicilB}+'\',\'\',\'\')'">反面</button>
+                     </td>
+                     <td>
+                         <button class="btn btn-info btn-xs" th:if="!${doctorDto.certificatePathDto.card == '00001'}" th:onclick="'show_image(\'工作证\',\''+${doctorDto.certificatePathDto.card}+'\',\'\',\'\')'">查看</button>
+                     </td>
+                     <!--<td>-->
+                         <!--<button class="btn btn-info btn-xs" th:if="!${doctorDto.certificatePathDto.card == '00001'}" th:onclick="'javascript:showImage(\''+${doctorDto.certificatePathDto.card}+'\');'">查看</button>-->
+                     <!--</td>-->
+                     <td>
+                         <span class="editable-text" th:text="${doctorDto.startTime}"></span>
+                     </td>
+                     <td>
+                         <span class="editable-text" th:text="${doctorDto.doctorCertificatesBean.identifyRemarks}"></span>
+                     </td>
+                     <td>
+                         <div th:switch="${doctorDto.doctorCertificatesBean.identifyStatus}" class="audit">
+                             <span th:case="0" id="case0">- - - -</span>
+                             <span th:case="1" id="case1">待审核</span>
+                             <span th:case="2" id="case2">审核通过</span>
+                             <span th:case="3" id="case3">审核不通过</span>
+                             <span th:case="5" id="case3">审核不通过</span>
+                             <span th:case="4" id="case3">待重新审核</span>
+                         </div>
+                         <!--<div><span =  "${doctorDto.doctorCertificatesBean.status}">erer</span></div>-->
+                         <!--<span class="editable-text">{{row.status | to_status}}</span>-->
+                     </td>
+                     <td>
+                         <!--<button  class="btn btn-primary btn-xs auditStatus passStatus" th:if="${doctorDto.doctorCertificatesBean.identifyStatus == 1}" th:onclick="'javascript:cerAudit(this,'+${2}+',\''+${doctorDto.doctorCertificatesBean.id}+'\')'">通过</button>-->
+                         <!--<button  class="btn btn-primary btn-xs auditStatus failStatus" th:if="${doctorDto.doctorCertificatesBean.identifyStatus == 1}" th:onclick="'javascript:cerAudit(this,'+${3}+',\''+${doctorDto.doctorCertificatesBean.id}+'\')'">不通过</button>-->
+                         <button  class="btn btn-primary btn-xs auditStatus passStatus" th:if="${doctorDto.doctorCertificatesBean.identifyStatus == 1 || doctorDto.doctorCertificatesBean.identifyStatus == 4 }">通过</button>
+                         <p style="height: 2px;"></p>
+                         <button  class="btn btn-primary btn-xs auditStatus failStatus" th:if="${doctorDto.doctorCertificatesBean.identifyStatus == 1 || doctorDto.doctorCertificatesBean.identifyStatus == 4 }">不通过</button>
+                     </td>
+                 </tr>
+             </table>
+             <nav th:if="not ${pageInfoDto == null}" th:object="${pageInfoDto}">
+                 <ul class="pagination">
+                     <li>
+                         <a th:onclick="'javascript:pageGo('+${1}+','+*{pageSize}+');'">首页</a>
+                     </li>
+                     <li>
+                         <a th:if="*{not isFirstPage}" th:onclick="'javascript:pageGo('+*{pageNum-1}+','+*{pageSize}+');'">上一页</a>
+                         <a th:if="*{isFirstPage}" href="javascript:void(0);">上一页</a>
+                     </li>
+
+                     <li th:each="pageNo : *{#numbers.sequence(beginPage, endPage)}">
+
+                         <a th:if="${pgeaNum eq pageNo}" href="javascript:void(0);">
+                             <span th:text="${pageNo}"></span>
+                         </a>
+                         <a th:if="${not (pageNum eq pageNo)}" th:onclick="'javascript:pageGo('+${pageNo}+','+*{pageSize}+');'" >
+                             <span th:text="${pageNo}"></span>
+                         </a>
+                     </li>
+                     <li>
+                         <a th:if="*{not isLastPage}" th:onclick="'javascript:pageGo('+*{pageNum+1}+','+*{pageSize}+');'">下一页</a>
+                         <a th:if="*{isLastPage}" href="javascript:void(0);">下一页</a>
+                     </li>
+                     <li>
+                         <a th:onclick="'javascript:pageGo('+*{pages}+','+*{pageSize}+');'">尾页</a>
+                     </li>
+                 </ul>
+                 <form class="form-inline">
+                     <div class="form-group">
+                         <label for="exampleInputName2">共<span th:text="*{pages}"></span>页数据，跳转到第</label>
+                         <input type="number" class="form-control" id="exampleInputName2" ng-model="inputPage" ng-value="1"/>页
+                         <a class="danger" value="go" th:onclick="'javascript:pageNumGo('+*{pageSize}+');'">go</a>
+                     </div>
+                 </form>
+             </nav>
+             <nav th:if="${pageInfoDto == null}">没有相关用户信息...</nav>
+         </div>
+
+     </div>
+  </body>
+</html>

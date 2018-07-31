@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="admin" />
+        <module name="admin-mapper" />
+        <module name="backward-manage" />
+        <module name="backward-mapper" />
+        <module name="common" />
+        <module name="mapper" />
+        <module name="order" />
+        <module name="task" />
+        <module name="usrauth" />
+        <module name="web" />
+        <module name="whiteplanet-redis" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin" target="1.8" />
+      <module name="admin-mapper" target="1.8" />
+      <module name="apiserver-java" target="1.8" />
+      <module name="backward-manage" target="1.8" />
+      <module name="backward-mapper" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="mapper" target="1.8" />
+      <module name="order" target="1.8" />
+      <module name="task" target="1.8" />
+      <module name="usrauth" target="1.8" />
+      <module name="web" target="1.8" />
+      <module name="whiteplanet-redis" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

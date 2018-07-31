@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <body>
+     <div th:fragment="content" id="listContent">
+         <div>
+             <table class="table table-bordered table-hover table-condensed editable-table demoTable" style="word-break: break-all;word-wrap: break-word">
+                 <caption align="top" style="text-align: left">短信最新数据&nbsp;&nbsp;&nbsp;反馈总数：<span th:text="${pageInfoDto.totals}"></span></caption>
+                 <colgroup>
+                     <col width="15%" />
+                     <col width="15%" />
+                     <col width="40%" />
+                     <col width="15%" />
+                     <col width="15%" />
+                 </colgroup>
+                 <thead>
+                 <tr>
+                     <!--<th ng-click="table='phone';rev = !rev"><span class="editable-text">用户id</span><i class="fa" ng-class="{'fa-arrow-down':rev,'fa-arrow-up':!rev}"></i></th>-->
+                     <th ng-click="table='name';rev = !rev"><span class="editable-text">手机号</span><i class="fa" ng-class="{'fa-arrow-down':rev,'fa-arrow-up':!rev}"></i></th>
+                     <th ng-click="table='hospital';rev = !rev"><span class="editable-text">验证码</span><i class="fa" ng-class="{'fa-arrow-down':rev,'fa-arrow-up':!rev}"></i></th>
+                     <th ng-click="table='time';rev = !rev"><span class="editable-text">次数</span><i class="fa" ng-class="{'fa-arrow-down':rev,'fa-arrow-up':!rev}"></i></th>
+                     <th ng-click="table='time';rev = !rev"><span class="editable-text">发送时间</span><i class="fa" ng-class="{'fa-arrow-down':rev,'fa-arrow-up':!rev}"></i></th>
+                     <th><span class="editable-text">操作</span></th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                 </tbody>
+                 <tr th:if="${not #lists.isEmpty(appSmsDtos)}" th:each = "appSmsDto : ${appSmsDtos}" class="doctorTable" style="width:100%;">
+                     <td>
+                         <span class="editable-text" th:text="${appSmsDto.phonenumber}">333</span>
+                     </td>
+                     <td>
+                         <span class="editable-text" th:text="${appSmsDto.value}"></span>
+                     </td>
+                     <td>
+                         <span class="editable-text" th:text="${appSmsDto.timeCount}"></span>
+                     </td>
+                     <td>
+                         <span class="editable-text" th:text="${#dates.format(appSmsDto.nextdatetime,'yyyy/MM/dd HH:mm:ss')}"></span>
+                     </td>
+                     <td>
+                         <!--<button  class="btn btn-primary btn-xs auditStatus passStatus" >通过</button>-->
+                         <!--<button  class="btn btn-primary btn-xs auditStatus failStatus" >不通过</button>-->
+                     </td>
+                 </tr>
+             </table>
+             <nav th:if="not ${pageInfoDto == null}" th:object="${pageInfoDto}">
+                 <ul class="pagination">
+                     <li>
+                         <a th:onclick="'javascript:pageGo('+${1}+','+*{pageSize}+');'">首页</a>
+                     </li>
+                     <li>
+                         <a th:if="*{not isFirstPage}" th:onclick="'javascript:pageGo('+*{pageNum-1}+','+*{pageSize}+');'">上一页</a>
+                         <a th:if="*{isFirstPage}" href="javascript:void(0);">上一页</a>
+                     </li>
+
+                     <li th:each="pageNo : *{#numbers.sequence(beginPage, endPage)}">
+                         <a th:if="${pgeaNum eq pageNo}" href="javascript:void(0);">
+                             <span th:text="${pageNo}"></span>
+                         </a>
+                         <a th:if="${not (pageNum eq pageNo)}" th:onclick="'javascript:pageGo('+${pageNo}+','+*{pageSize}+');'" >
+                             <span th:text="${pageNo}"></span>
+                         </a>
+                     </li>
+                     <li>
+                         <a th:if="*{not isLastPage}" th:onclick="'javascript:pageGo('+*{pageNum+1}+','+*{pageSize}+');'">下一页</a>
+                         <a th:if="*{isLastPage}" href="javascript:void(0);">下一页</a>
+                     </li>
+                     <li>
+                         <a th:onclick="'javascript:pageGo('+*{pages}+','+*{pageSize}+');'">尾页</a>
+                     </li>
+                 </ul>
+                 <form class="form-inline">
+                     <div class="form-group">
+                         <label for="exampleInputName2">共<span th:text="*{pages}"></span>页数据，跳转到第</label>
+                         <input type="number" class="form-control" id="exampleInputName2" ng-model="inputPage" ng-value="1"/>页
+                         <a class="danger" value="go" th:onclick="'javascript:pageNumGo('+*{pageSize}+');'">go</a>
+                     </div>
+                 </form>
+             </nav>
+             <nav th:if="${pageInfoDto == null}">没有相关版本信息...</nav>
+         </div>
+     </div>
+  </body>
+</html>

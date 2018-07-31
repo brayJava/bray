@@ -1,0 +1,1391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5a9fb835-49c0-4b8d-826c-cff6e894b74c" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/mapper/src/main/temp/com/whiteplanet/apiserver/mapper/MessageTypeContentMapper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mapper/src/main/temp/com/whiteplanet/apiserver/mapper/MessageTypeContentSqlProvider.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mapper/src/main/temp/com/whiteplanet/mapper/model/MessageTypeContent.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mapper/src/main/temp/com/whiteplanet/mapper/model/MessageTypeContentExample.java" />
+      <change beforePath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/.idea/misc.xml" afterPath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/.idea/modules/ApiServer-build.iml" afterPath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/.idea/modules/ApiServer-build.iml" />
+      <change beforePath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/.idea/modules/ApiServer.iml" afterPath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/.idea/modules/ApiServer.iml" />
+      <change beforePath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/build.sbt" afterPath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/build.sbt" />
+      <change beforePath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/project/plugins.sbt" afterPath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/project/plugins.sbt" />
+      <change beforePath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/src/main/java/com/filter/DruidStatViewServlet.java" afterPath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/src/main/java/com/filter/DruidStatViewServlet.java" />
+      <change beforePath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/src/main/resources/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/src/main/resources/application.properties" />
+      <change beforePath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/src/main/resources/logback-spring.xml" afterPath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/src/main/resources/logback-spring.xml" />
+      <change beforePath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/src/main/scala/com/whiteplante/apiserver/Main.scala" afterPath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/src/main/scala/com/whiteplante/apiserver/Main.scala" />
+      <change beforePath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/src/main/scala/com/whiteplante/apiserver/common/table/DoctorStatisticsTable.scala" afterPath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/src/main/scala/com/whiteplante/apiserver/common/table/DoctorStatisticsTable.scala" />
+      <change beforePath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/src/main/scala/com/whiteplante/apiserver/service/OtherService.scala" afterPath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/src/main/scala/com/whiteplante/apiserver/service/OtherService.scala" />
+      <change beforePath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/src/main/scala/com/whiteplante/apiserver/service/doctor/AccountDoctorService.scala" afterPath="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server/src/main/scala/com/whiteplante/apiserver/service/doctor/AccountDoctorService.scala" />
+      <change beforePath="$PROJECT_DIR$/admin-mapper/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/admin-mapper/src/main/resources/generatorConfig.xml" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/controller/AppVersionController.java" afterPath="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/controller/AppVersionController.java" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/dto/Constant.java" afterPath="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/dto/Constant.java" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/filter/DruidStatViewServlet.java" afterPath="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/filter/DruidStatViewServlet.java" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/DoctorUserService.java" afterPath="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/DoctorUserService.java" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/FeedBackService.java" afterPath="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/FeedBackService.java" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/impl/AppVersionServiceImpl.java" afterPath="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/impl/AppVersionServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/application-test.properties" afterPath="$PROJECT_DIR$/admin/src/main/resources/application-test.properties" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/admin/src/main/resources/application.properties" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/logback-spring.xml" afterPath="$PROJECT_DIR$/admin/src/main/resources/logback-spring.xml" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/templates/audit/indexListT.html" afterPath="$PROJECT_DIR$/admin/src/main/resources/templates/audit/indexListT.html" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/templates/feedback/feed.html" afterPath="$PROJECT_DIR$/admin/src/main/resources/templates/feedback/feed.html" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/templates/version/app-version.html" afterPath="$PROJECT_DIR$/admin/src/main/resources/templates/version/app-version.html" />
+      <change beforePath="$PROJECT_DIR$/backward-manage/backward-manage.iml" afterPath="$PROJECT_DIR$/backward-manage/backward-manage.iml" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/whiteplanet/push/wechat/WechatTemplateMessageServiceImpl.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/whiteplanet/push/wechat/WechatTemplateMessageServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com/whiteplanet/mapper/PhoneCodeMapper.java" afterPath="$PROJECT_DIR$/mapper/src/main/java/com/whiteplanet/mapper/PhoneCodeMapper.java" />
+      <change beforePath="$PROJECT_DIR$/task/src/main/resources/application-prod.properties" afterPath="$PROJECT_DIR$/task/src/main/resources/application-prod.properties" />
+      <change beforePath="$PROJECT_DIR$/task/src/main/resources/logback-spring.xml" afterPath="$PROJECT_DIR$/task/src/main/resources/logback-spring.xml" />
+      <change beforePath="$PROJECT_DIR$/whiteplanet-admin.log.1" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/whiteplanet-admin.log.2" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/backward-mapper/target/" />
+    <ignored path="$PROJECT_DIR$/order/target/" />
+    <ignored path="$PROJECT_DIR$/admin-mapper/target/" />
+    <ignored path="$PROJECT_DIR$/usrauth/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/web/target/" />
+    <ignored path="$PROJECT_DIR$/task/target/" />
+    <ignored path="$PROJECT_DIR$/mapper/target/" />
+    <ignored path="$PROJECT_DIR$/backward-manage/target/" />
+    <ignored path="$PROJECT_DIR$/common/target/" />
+    <ignored path="$PROJECT_DIR$/admin/target/" />
+    <ignored path="$PROJECT_DIR$/whiteplanet-redis/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="FeedBackService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/FeedBackService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+              <folding>
+                <element signature="docComment;class#FeedBackService#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>listContent</find>
+      <find>Hui-iconfont</find>
+      <find>添加版本</find>
+      <find>版本管理</find>
+      <find>用户</find>
+      <find>2017</find>
+      <find>#aside-user</find>
+      <find>member_add</find>
+      <find>member</find>
+      <find>selectParentCodeByPrimaryKey</find>
+      <find>capture1386.props</find>
+      <find>jdbc</find>
+      <find>poolProperties</find>
+      <find>wp.datasource</find>
+      <find>spring.datasource</find>
+      <find>doctorMapper</find>
+      <find>admin</find>
+      <find>wpSqlSessionTemplate</find>
+      <find>sqlSessionTemplate</find>
+      <find>admin/index</find>
+      <find>druid/</find>
+      <find>druid</find>
+      <find>管理</find>
+      <find>fileInfoLog</find>
+      <find>fileErrorLog</find>
+      <find>80</find>
+      <find>8888</find>
+      <find>ERROR</find>
+      <find>INT2</find>
+      <find>中</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>createTime</replace>
+      <replace>create_time</replace>
+      <replace>CreateTime</replace>
+      <replace>spring.datasource</replace>
+      <replace>wp.datasource</replace>
+      <replace>INT_4</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com/whiteplanet/mapper/AppVersionContentSqlProvider.java" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com/whiteplanet/mapper/AppVersionContentMapper.java" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com/whiteplanet/mapper/data/AppVersionWithContent.java" />
+        <option value="$PROJECT_DIR$/admin/src/test/java/com/whiteplanet/admin/service/AppVersionServiceTest.java" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com/whiteplanet/mapper/data/AppVersionWithCont.java" />
+        <option value="$PROJECT_DIR$/whiteplanet-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/AppVersionService.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/resources/templates/version/layoutTab.html" />
+        <option value="$PROJECT_DIR$/admin/src/main/resources/static/js/version/versionpage.js" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com/whiteplanet/mapper/DepartmentChangeTempMapper.java" />
+        <option value="$PROJECT_DIR$/admin-mapper/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/mapper/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com/whiteplanet/mapper/MessageTypeContentMapper.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/whiteplanet/im/jiguang/api/service/impl/JMessageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/admin-applog/2018-07-20/2018-07-20.log" />
+        <option value="$PROJECT_DIR$/admin-logs/2018-07-20/2018-07-20.log" />
+        <option value="$PROJECT_DIR$/mapper/pom.xml" />
+        <option value="$PROJECT_DIR$/admin/src/main/resources/application-prod.properties" />
+        <option value="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/DruidConfiguration.java" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com/whiteplanet/mapper/config/DruidConfiguration.java" />
+        <option value="$PROJECT_DIR$/admin/pom.xml" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com/whiteplanet/mapper/config/MapperConfig.java" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com/whiteplanet/mapper/config/DruidMapperConfig.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/admin-mapper/pom.xml" />
+        <option value="$PROJECT_DIR$/admin-mapper/src/main/java/com/whiteplanet/admin/mapper/config/AdminMapperConfig.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/resources/application-druid.properties" />
+        <option value="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/filter/DuridStatFilter.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/AdminAppliction.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/filter/DruidStatIntercepter.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/resources/templates/audit/indexListT.html" />
+        <option value="$PROJECT_DIR$/admin/src/main/resources/templates/feedback/feed.html" />
+        <option value="$PROJECT_DIR$/admin/src/main/resources/templates/version/app-version.html" />
+        <option value="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/dto/Constant.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/impl/AppVersionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com/whiteplanet/mapper/PhoneCodeMapper.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/resources/templates/sms/layoutTab.html" />
+        <option value="$PROJECT_DIR$/admin/src/main/resources/templates/sms/sms.html" />
+        <option value="$PROJECT_DIR$/admin/src/main/resources/static/js/sms/sms.js" />
+        <option value="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/controller/AppVersionController.java" />
+        <option value="$PROJECT_DIR$/admin-logs/error-logs/2018-07-27/2018-07-27.log" />
+        <option value="$PROJECT_DIR$/admin/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/filter/DruidStatViewServlet.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/resources/application-test.properties" />
+        <option value="$PROJECT_DIR$/admin/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/whiteplanet/push/wechat/WechatTemplateMessageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/task/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/task/src/main/resources/application-prod.properties" />
+        <option value="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/UserBaseService.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/DoctorUserService.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/FeedBackService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="admin" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="admin" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Run Configurations" type="21c1f71a:MavenProjectsStructure$RunConfigurationsNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="303" />
+    <option name="y" value="265" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Gradle</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>OSGi</id>
+          </State>
+          <State>
+            <id>Probable bugsGradle</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="apiserver-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apiserver-java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="SearchEverywhereHistoryKey" value="maven&#9;ACTION&#9;ActivateMavenProjectsToolWindow&#10;project&#9;ACTION&#9;ActivateProjectToolWindow&#10;AdminMapperConfig&#9;PSI&#9;JAVA://com.whiteplanet.admin.mapper.config.AdminMapperConfig&#10;adminA&#9;FILE&#9;file://E:/developmentSpace/whiteplanet/apiserver-java/admin/src/main/java/com/whiteplanet/admin/AdminAppliction.java&#10;DoctorMapper&#9;PSI&#9;JAVA://com.whiteplanet.mapper.DoctorMapper&#10;mave&#9;null&#9;null&#10;pro&#9;FILE&#9;file://E:/developmentSpace/whiteplanet/apiserver-java/admin/src/main/resources/application.properties&#10;generator&#9;FILE&#9;file://E:/developmentSpace/whiteplanet/apiserver-java/mapper/src/main/resources/generatorConfig.xml&#10;ma&#9;ACTION&#9;ActivateMavenProjectsToolWindow&#10;gen&#9;FILE&#9;file://E:/developmentSpace/whiteplanet/apiserver-java/admin-mapper/src/main/resources/generatorConfig.xml&#10;departmentMapper.&#9;FILE&#9;file://E:/developmentSpace/whiteplanet/apiserver-java/mapper/src/main/java/com/whiteplanet/mapper/DepartmentMapper.java&#10;page&#9;FILE&#9;file://E:/developmentSpace/whiteplanet/apiserver-java/admin/src/main/resources/static/js/admin/page.js&#10;version-a&#9;FILE&#9;file://E:/developmentSpace/whiteplanet/apiserver-java/admin/src/main/resources/static/version-add.html&#10;ver&#9;FILE&#9;file://E:/developmentSpace/whiteplanet/apiserver-java/admin/src/main/resources/templates/version/app-version.html&#10;AppversionCon&#9;FILE&#9;file://E:/developmentSpace/whiteplanet/apiserver-java/admin/src/main/java/com/whiteplanet/admin/controller/AppVersionController.java&#10;Chan&#9;PSI&#9;JAVA://com.whiteplanet.mapper.DepartmentChangeTempMapper&#10;debug&#9;ACTION&#9;ActivateDebugToolWindow&#10;debu&#9;ACTION&#9;ActivateDebugToolWindow&#10;proje&#9;ACTION&#9;ActivateProjectToolWindow&#10;AppVersion&#9;FILE&#9;file://E:/developmentSpace/whiteplanet/apiserver-java/mapper/src/main/java/com/whiteplanet/mapper/model/AppVersion.java&#10;/service&#9;FILE&#9;file://E:/developmentSpace/whiteplanet/apiserver-java/admin/src/main/java/com/whiteplanet/admin/service" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\developmentSpace\whiteplanet\apiserver-java\admin\src\main\resources" />
+      <recent name="E:\developmentSpace\whiteplanet\apiserver-java\admin\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.whiteplanet.mapper.config" />
+      <recent name="com.whiteplanet.admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\developmentSpace\whiteplanet\apiserver-java\admin\src\main\resources\templates\sms" />
+      <recent name="E:\developmentSpace\whiteplanet\apiserver-java\mapper\src\main\java\com\whiteplanet\mapper" />
+      <recent name="E:\developmentSpace\whiteplanet\apiserver-java\mapper\src\main\java\com\whiteplanet\mapper\model" />
+      <recent name="E:\developmentSpace\whiteplanet\apiserver-java\admin\src\main\resources\static" />
+      <recent name="E:\developmentSpace\whiteplanet\apiserver-java\admin\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AdminAppliction">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration name="DruidStatIntercepter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.whiteplanet.admin.filter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.whiteplanet.admin.filter.DruidStatIntercepter" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="admin" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="AppVersionServiceTest.insertBatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.whiteplanet.admin.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="admin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.whiteplanet.admin.service" />
+      <option name="MAIN_CLASS_NAME" value="com.whiteplanet.admin.service.AppVersionServiceTest" />
+      <option name="METHOD_NAME" value="insertBatch" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="admin-1.0-SNAPSHOT.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/admin/target/admin-1.0-SNAPSHOT.jar" />
+      <envs />
+    </configuration>
+    <configuration name="task-1.0-SNAPSHOT.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/task/target/task-1.0-SNAPSHOT.jar" />
+      <envs />
+    </configuration>
+    <configuration name="admin [clean,compile,package,install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="compile" />
+                <option value="package" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/admin" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
+    <configuration name="admin-mapper [clean,compile,package...]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="compile" />
+                <option value="package" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/admin-mapper" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
+    <configuration name="mapper [clean,compile,package,install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="compile" />
+                <option value="package" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/mapper" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="AdminAppliction" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.whiteplanet.admin.AdminAppliction" />
+      <module name="admin" />
+      <envs />
+    </configuration>
+    <configuration name="TaskBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.whiteplanet.TaskBootApplication" />
+      <module name="task" />
+      <envs />
+    </configuration>
+    <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.whiteplanet.web.WebApplication" />
+      <module name="web" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list size="10">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.TaskBootApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.AdminAppliction" />
+      <item index="2" class="java.lang.String" itemvalue="Spring Boot.WebApplication" />
+      <item index="3" class="java.lang.String" itemvalue="Maven.admin [clean,compile,package,install]" />
+      <item index="4" class="java.lang.String" itemvalue="Maven.mapper [clean,compile,package,install]" />
+      <item index="5" class="java.lang.String" itemvalue="Maven.admin-mapper [clean,compile,package...]" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.AppVersionServiceTest.insertBatch" />
+      <item index="7" class="java.lang.String" itemvalue="JAR Application.admin-1.0-SNAPSHOT.jar" />
+      <item index="8" class="java.lang.String" itemvalue="Application.DruidStatIntercepter" />
+      <item index="9" class="java.lang.String" itemvalue="JAR Application.task-1.0-SNAPSHOT.jar" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JAR Application.task-1.0-SNAPSHOT.jar" />
+        <item index="1" class="java.lang.String" itemvalue="JAR Application.admin-1.0-SNAPSHOT.jar" />
+        <item index="2" class="java.lang.String" itemvalue="Application.DruidStatIntercepter" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AppVersionServiceTest.insertBatch" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../whiteplanet-pord/bsxq-api-server" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../bsxq-api-server" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a9fb835-49c0-4b8d-826c-cff6e894b74c" name="Default" comment="" />
+      <created>1531445521752</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531445521752</updated>
+      <workItem from="1531445523228" duration="11127000" />
+      <workItem from="1531461574010" duration="18320000" />
+      <workItem from="1531538554634" duration="13247000" />
+      <workItem from="1531704201485" duration="22866000" />
+      <workItem from="1531736626276" duration="717000" />
+      <workItem from="1531744092406" duration="10834000" />
+      <workItem from="1531791223309" duration="27629000" />
+      <workItem from="1531877435208" duration="12590000" />
+      <workItem from="1531917474084" duration="2273000" />
+      <workItem from="1531963229302" duration="14581000" />
+      <workItem from="1532051735910" duration="16413000" />
+      <workItem from="1532140448606" duration="25511000" />
+      <workItem from="1532276552464" duration="890000" />
+      <workItem from="1532317730709" duration="8816000" />
+      <workItem from="1532400458755" duration="1798000" />
+      <workItem from="1532409891335" duration="2215000" />
+      <workItem from="1532413129700" duration="346000" />
+      <workItem from="1532413522215" duration="337000" />
+      <workItem from="1532413908480" duration="5395000" />
+      <workItem from="1532481750697" duration="7661000" />
+      <workItem from="1532501697076" duration="21431000" />
+      <workItem from="1532707074237" duration="11570000" />
+      <workItem from="1532860884888" duration="3495000" />
+      <workItem from="1532913410073" duration="7554000" />
+      <workItem from="1533008230755" duration="1382000" />
+    </task>
+    <task id="LOCAL-00001" summary="版本管理界面提交">
+      <created>1531908159657</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1531908159658</updated>
+    </task>
+    <task id="LOCAL-00002" summary="im消息统计逻辑修改">
+      <created>1531992314953</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1531992314954</updated>
+    </task>
+    <task id="LOCAL-00003" summary="数据源修改为druid">
+      <created>1532318063287</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1532318063287</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="AppVersionServiceTest_insertBatch - 2018.07.13 at 18h 19m 17s.xml">
+      <configuration name="AppVersionServiceTest.insertBatch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppVersionServiceTest_insertBatch - 2018.07.13 at 18h 21m 23s.xml">
+      <configuration name="AppVersionServiceTest.insertBatch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppVersionServiceTest_insertBatch - 2018.07.13 at 18h 22m 40s.xml">
+      <configuration name="AppVersionServiceTest.insertBatch" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="248998000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34431818" sideWeight="0.50208336" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16927083" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Translate" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24545455" sideWeight="0.49791667" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3375" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23072916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="sbt" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34886363" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3659091" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="sbt" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34431818" sideWeight="0.50208336" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.080729164" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Translate" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23409091" sideWeight="0.49791667" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34886363" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21931818" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3375" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20364584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3659091" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="版本管理界面提交" />
+    <MESSAGE value="im消息统计逻辑修改" />
+    <MESSAGE value="数据源修改为druid" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据源修改为druid" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin/src/test/java/com/whiteplanet/admin/service/AppVersionServiceTest.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin/src/test/java/com/whiteplanet/admin/service/AppVersionServiceTest.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-jdbc/8.5.23/tomcat-jdbc-8.5.23.jar!/org/apache/tomcat/jdbc/pool/PooledConnection.class</url>
+          <line>244</line>
+          <properties />
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mapper/src/main/java/com/whiteplanet/mapper/config/MapperConfig.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/filter/DruidStatViewServlet.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/filter/DuridStatFilter.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/whiteplanet/im/jiguang/api/service/impl/JMessageServiceImpl.java</url>
+          <line>216</line>
+          <properties />
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/whiteplanet/im/jiguang/api/service/impl/JMessageServiceImpl.java</url>
+          <line>227</line>
+          <properties />
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/whiteplanet/im/jiguang/api/service/impl/JMessageServiceImpl.java</url>
+          <line>223</line>
+          <properties />
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/main/java/com/whiteplanet/im/jiguang/api/service/impl/JMessageServiceImpl.java</url>
+          <line>231</line>
+          <properties />
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/admin/src/main/resources/static/js/H-ui.admin.js</url>
+          <line>204</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="156" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>jMessageBean.getFromId()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>messageResult.getMsgBody().getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>messageResult.getMsgBody().getText())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>phrasesMap.containsKey(messageResult.getMsgBody().getText())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>messageResult.getMsgType()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;A05&quot;.equals(departmentMapper.selectParentCodeByPrimaryKey(departmentChangeTemp.getToDepartmentId())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>departmentMapper.selectParentCodeByPrimaryKey(departmentChangeTemp.getToDepartmentId()))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>departmentMapper.selectParentCodeByPrimaryKey(originalDoctor.getDepartmentId())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>departmentChangeTemp.getToDepartmentId()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/impl/AppVersionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="108" column="32" lean-forward="true" selection-start-line="108" selection-start-column="32" selection-end-line="108" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/static/js/feedback/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/static/js/feedback/feedpage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/templates/version/layoutTab.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1434">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/templates/version/app-version.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="356" column="0" lean-forward="true" selection-start-line="356" selection-start-column="0" selection-end-line="357" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/static/js/sms/sms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="91" lean-forward="true" selection-start-line="12" selection-start-column="91" selection-end-line="12" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/templates/sms/sms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3204">
+          <caret line="353" column="8" lean-forward="true" selection-start-line="353" selection-start-column="8" selection-end-line="353" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/templates/sms/layoutTab.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-743">
+          <caret line="3" column="49" lean-forward="true" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="208" column="42" lean-forward="false" selection-start-line="208" selection-start-column="42" selection-end-line="208" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="47" column="59" lean-forward="true" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.12.RELEASE/spring-tx-4.3.12.RELEASE.jar!/org/springframework/transaction/annotation/Transactional.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin-logs/info-logs/2018-07-27/2018-07-27.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="2265" column="0" lean-forward="true" selection-start-line="2265" selection-start-column="0" selection-end-line="2265" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin-logs/error-logs/2018-07-27/2018-07-27.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="26" column="83" lean-forward="true" selection-start-line="26" selection-start-column="83" selection-end-line="26" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/filter/DruidStatViewServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/filter/DruidStatIntercepter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/filter/DuridStatFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/controller/AppVersionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/AdminAppliction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/application-test.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/application-druid.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="50" lean-forward="true" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/whiteplanet/im/jiguang/api/message/MessageClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="61" column="29" lean-forward="false" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.12.RELEASE/spring-core-4.3.12.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.12.RELEASE/spring-tx-4.3.12.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com/whiteplanet/mapper/ImSingleMessageMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="62" column="51" lean-forward="false" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/whiteplanet/im/jiguang/api/service/impl/JMessageHandleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task/src/main/java/com/whiteplanet/quartz/task/BaseTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task/src/main/java/com/whiteplanet/quartz/task/JMessageAdviceTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task/src/main/java/com/whiteplanet/quartz/task/QuartzServiceTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+          <caret line="103" column="64" lean-forward="true" selection-start-line="103" selection-start-column="64" selection-end-line="103" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task/src/main/java/com/whiteplanet/quartz/task/JMessageSynchronousTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/whiteplanet/push/wechat/bean/TemplateParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/whiteplanet/push/wechat/WechatTemplateMessageServcie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/whiteplanet/im/jiguang/api/service/impl/JMessageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="273" column="81" lean-forward="true" selection-start-line="273" selection-start-column="81" selection-end-line="273" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/whiteplanet/push/wechat/bean/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/whiteplanet/push/wechat/bean/WechatConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="20" column="96" lean-forward="true" selection-start-line="20" selection-start-column="96" selection-end-line="20" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/whiteplanet/push/wechat/WechatTemplateMessageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="40" column="78" lean-forward="true" selection-start-line="40" selection-start-column="78" selection-end-line="40" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="21" column="81" lean-forward="false" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="24" column="69" lean-forward="true" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task/src/main/resources/application-prod.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task/src/main/java/com/whiteplanet/TaskBootApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2794">
+          <caret line="158" column="69" lean-forward="true" selection-start-line="158" selection-start-column="69" selection-end-line="158" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/JMessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1364">
+          <caret line="75" column="36" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/AppVersionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com/whiteplanet/mapper/DoctorMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="133" column="8" lean-forward="false" selection-start-line="133" selection-start-column="8" selection-end-line="133" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com/whiteplanet/mapper/DoctorCertificatesMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="72" column="99" lean-forward="true" selection-start-line="72" selection-start-column="99" selection-end-line="72" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/UserBaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/DoctorUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/whiteplanet/admin/service/FeedBackService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <folding>
+            <element signature="docComment;class#FeedBackService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring (admin)|Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.12.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web|admin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.alibaba:fastjson:1.2.31</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

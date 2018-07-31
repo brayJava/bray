@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>医生用户列表</title>
+  <meta name="description" content="app, web app, responsive, responsive layout, admin, admin panel, admin dashboard, flat, flat ui, ui kit, AngularJS, ui route, charts, widgets, components" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="../../static/css/bootstrap.css" type="text/css"
+        th:href="@{/css/bootstrap.css}"/>
+  <link rel="stylesheet" href="../../static/vendor/font-awesome-4.7.0/css/font-awesome.css"
+        th:href="@{/vendor/font-awesome-4.7.0/css/font-awesome.css}"/>
+  <link rel="stylesheet" href="../../static/css/simple-line-icons.css" type="text/css"
+        th:href="@{/css/simple-line-icons.css}"/>
+  <link rel="stylesheet" href="../../static/css/app.css" type="text/css"
+        th:href="@{/css/app.css}"/>
+</head>
+<body ng-controller="AppCtrl">
+<!--<div><p>-->
+<!--Welcome to the Spring Boot Thymeleaf Application! The time is:-->
+<!--</p></div>-->
+<div id="app" class="app"  ui-view="">
+  <style>
+    .demoTable td:last-child {
+      min-width: 90px;
+    }
+
+    /** Editable table
+    ------------------------- */
+
+    .editable-table > tbody > tr > td {
+      padding: 4px
+    }
+    .editable-text {
+      padding-left: 4px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .editable-table tbody > tr > td > .controls {
+    //width: 100%
+    }
+    .editable-input {
+      padding-left: 3px;
+    }
+    .editable-input.input-sm {
+      height: 30px;
+      font-size: 14px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+    .table tr td{
+      background-color: white;
+    }
+    .table tr th{
+      background-color: white;
+    }
+    .table tr tr{
+      background-color: white;
+    }
+    /*.table tr:nth-of-type(2) th{*/
+    /*background-color: #e4b9c0;*/
+    /*}*/
+    .full button span {
+      background-color: limegreen;
+      border-radius: 32px;
+      color: black;
+    }
+    .partially button span {
+      background-color: orange;
+      border-radius: 32px;
+      color: black;
+    }
+    .table > thead > tr:nth-of-type(1) > th{
+      padding: 8px 0;
+    }
+    .form-horizontal label{
+      line-height: 34px;
+    }
+    thead tr th{
+      text-align: center;
+    }
+    .form-inline{
+      margin-bottom: 20px;
+    }
+    /*ui-date样式*/
+    .uib-button-bar .btn-group button[ng-click^="select(null, $event)"] {
+      display: none;
+    }
+  </style>
+  <!-- jQuery -->
+  <script src="../../static/vendor/jquery/jquery.min.js"
+          th:src="@{/vendor/jquery/jquery.min.js}"></script>
+  <!-- Angular -->
+  <script src="../../static/vendor/angular/angular.js"
+          th:src="@{/vendor/angular/angular.js}"></script>
+  <!-- Vendor -->
+  <script src="../../static/vendor/angular/angular-ui-router/angular-ui-router.js"
+          th:src="@{/vendor/angular/angular-ui-router/angular-ui-router.js}"></script>
+  <script src="../../static/vendor/angular/ngstorage/ngStorage.js"
+          th:src="@{/vendor/angular/ngstorage/ngStorage.js}"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../../static/vendor/angular/angular-bootstrap/ui-bootstrap-tpls.js"
+          th:src="@{/vendor/angular/angular-bootstrap/ui-bootstrap-tpls.js}"></script>
+  <!-- lazyload -->
+  <script src="../../static/vendor/angular/oclazyload/ocLazyLoad.js"
+          th:src="@{/vendor/angular/oclazyload/ocLazyLoad.js}"></script>
+  <!-- App -->
+  <script src="../../static/js/app.js"
+          th:src="@{/js/app.js}"></script>
+  <script src="../../static/js/config.js"
+          th:src="@{/js/config.js}"></script>
+  <script src="../../static/js/config.lazyload.js"
+          th:src="@{/js/config.lazyload.js}"></script>
+  <script src="../../static/js/config.router.js"
+          th:src="@{/js/config.router.js}"></script>
+  <script src="../../static/js/main.js"
+          th:src="@{/js/main.js}"></script>
+  <script src="../../static/js/services/ui-load.js"
+          th:src="@{/js/services/ui-load.js}"></script>
+  <script src="../../static/js/filters/fromNow.js"
+          th:src="@{/js/filters/fromNow.js}"></script>
+  <script src="../../static/js/directives/ui-toggleclass.js"
+          th:src="@{/js/directives/ui-toggleclass.js}"></script>
+  <script src="../../static/js/My97DatePickerBeta/WdatePicker.js"
+          th:src="@{/js/My97DatePickerBeta/WdatePicker.js}"></script>
+  <div class="app-header navbar">
+    <div class="navbar-header {{app.settings.navbarHeaderColor}}">
+      <button class="pull-right visible-xs dk" ui-toggle-class="show" data-target=".navbar-collapse">
+        <i class="glyphicon glyphicon-cog"></i>
+      </button>
+      <button class="pull-right visible-xs" ui-toggle-class="off-screen" data-target=".app-aside" ui-scroll="app" style="background-color: gainsboro">
+        <i class="glyphicon glyphicon-align-justify"></i>
+      </button>
+      <!-- brand -->
+      <a href="#" class="navbar-brand text-lt">
+        <!--<i class="fa fa-btc"></i>-->
+        <!--<img src="../../static/img/logo.png" th:src="@{/img/logo.png}" alt="." class="hide"></img>-->
+        <span class="hidden-folded m-l-xs" style="font-size: 12px">用户问题反馈</span>
+      </a>
+      <!-- / brand -->
+    </div>
+    <div class="collapse pos-rlt navbar-collapse box-shadow {{app.settings.navbarCollapseColor}}">
+      <!-- buttons -->
+      <div class="nav navbar-nav hidden-xs">
+        <a href="#" class="btn no-shadow navbar-btn" ng-click="app.settings.asideFolded = !app.settings.asideFolded">
+          <i class="fa {{app.settings.asideFolded ? 'fa-indent' : 'fa-dedent'}} fa-fw"></i>
+        </a>
+        <a href="#" class="btn no-shadow navbar-btn" ui-toggle-class="show" target="#aside-user">
+          <i class="icon-user fa-fw"></i>
+        </a>
+      </div>
+      <ul class="nav navbar-nav hidden-sm">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" >
+          <a href="#" th:href="@{/admin/index}" class="dropdown-toggle clear" >
+              <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
+                <img src="../../static/img/a0.jpg" th:src="@{/img/a0.jpg}" alt="..."></img>
+                <i class="on md b-white bottom"></i>
+              </span>
+            <span class="hidden-sm hidden-md" th:text="${adminUser.name}">John.Smith</span> <b class="caret"></b>
+          </a>
+          <!-- dropdown -->
+          <ul class="dropdown-menu animated fadeInRight w">
+            <li class="wrapper b-b m-b-sm bg-light m-t-n-xs">
+              <div>
+                <p>300mb of 500mb used</p>
+              </div>
+              <progressbar value="60" class="progress-xs m-b-none bg-white"></progressbar>
+            </li>
+            <li>
+              <a href="#">
+                <span class="badge bg-danger pull-right">30%</span>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">Profile</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="label bg-info pull-right">new</span>
+                Help
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">Logout</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="app-aside hidden-xs {{app.settings.asideColor}}">
+    <div class="aside-wrap" style="background-color: lightgrey">
+      <div class="navi-wrap">
+        <!-- user -->
+        <div class="clearfix hidden-xs text-center hide" id="aside-user">
+          <div class="dropdown wrapper">
+            <a href="#">
+          <span class="thumb-lg w-auto-folded avatar m-t-sm">
+            <img src="../../static/img/a0.jpg" th:src="@{/img/a0.jpg}" class="img-full" alt="..."></img>
+          </span>
+            </a>
+            <a href="#" class="dropdown-toggle hidden-folded">
+          <span class="clear">
+            <span class="block m-t-sm" th:value="${adminUser.name}">
+              <strong class="font-bold text-lt"><span th:value="${adminUser.name}">John.Smith</span></strong>
+              <b class="caret"></b>
+            </span>
+            <span class="text-muted text-xs block">Art Director</span>
+          </span>
+            </a>
+            <ul class="dropdown-menu animated fadeInRight w hidden-folded">
+              <li class="wrapper b-b m-b-sm bg-info m-t-n-xs">
+                <span class="arrow top hidden-folded arrow-info"></span>
+                <div>
+                  <p>300mb of 500mb used</p>
+                </div>
+                <progressbar value="60" type="white" class="progress-xs m-b-none dker"></progressbar>
+              </li>
+              <li>
+                <a href="#" th:href="@{/admin/index}">Settings</a>
+              </li>
+              <li>
+                <a href="#" th:href="@{/admin/index}">Profile</a>
+              </li>
+              <li>
+                <a href="#" th:href="@{/admin/index}">
+                  <span class="badge bg-danger pull-right">3</span>
+                  Notifications
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+          <div class="line dk hidden-folded"></div>
+        </div>
+        <nav>
+          <!-- list -->
+          <ul class="nav fade-in-down">
+            <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+              <span></span>
+            </li>
+            <li>
+              <a>
+                <i class="glyphicon glyphicon-envelope icon text-info-lter"></i>
+                <span class="font-bold"> <a th:href="@{/admin/initList}"> 实名认证管理 </a></span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="glyphicon glyphicon-envelope icon text-info-lter"></i>
+                <span class="font-bold"> <a th:href="@{/feed/init}"> 问题反馈管理</a></span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="glyphicon glyphicon-envelope icon text-info-lter"></i>
+                <span class="font-bold"> <a th:href="@{/version/get-all}"> 版本管理</a></span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="glyphicon glyphicon-envelope icon text-info-lter"></i>
+                <span class="font-bold"> <a th:href="@{/version/sms}"> 短信验证码</a></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="app-content">
+    <div></div>
+    <a class="off-screen-toggle hide" ui-toggle-class="off-screen" data-target=".app-aside" ></a>
+    <div class="app-content-body fade-in-up">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12" ng-controller="list3Ctrl as demo" style="padding-top: 30px" id = "contentTemplate">
+            <!--列表内容替换模板-->
+            <div th:replace="sms/layoutTab :: content">content</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="app-aside-right pos-fix no-padder w-md w-auto-xs bg-white b-l animated fadeInRight hide">
+    <div class="vbox">
+      <div class="wrapper b-b b-t b-light m-b">
+        <a class="pull-right text-muted text-md" ui-toggle-class="show" target=".app-aside-right"><i class="icon-close"></i></a>
+        Chat
+      </div>
+      <div class="row-row">
+        <div class="cell">
+          <div class="cell-inner padder">
+            <!-- chat list -->
+            <div class="m-b">
+              <a class="pull-left thumb-xs avatar"><img src="../../static/img/a2.jpg" th:src="@{/img/a2.jpg}" alt="..."></img></a>
+              <div class="clear">
+                <div class="pos-rlt wrapper-sm b b-light r m-l-sm">
+                  <span class="arrow left pull-up"></span>
+                  <p class="m-b-none">Hi John, What's up...</p>
+                </div>
+                <small class="text-muted m-l-sm"><i class="fa fa-ok text-success"></i> 2 minutes ago</small>
+              </div>
+            </div>
+            <div class="m-b">
+              <a class="pull-right thumb-xs avatar"><img src="../../static/img/a3.jpg" th:src="@{/img/a3.jpg}" class="img-circle" alt="..."></img></a>
+              <div class="clear">
+                <div class="pos-rlt wrapper-sm bg-light r m-r-sm">
+                  <span class="arrow right pull-up arrow-light"></span>
+                  <p class="m-b-none">Lorem ipsum dolor :)</p>
+                </div>
+                <small class="text-muted">1 minutes ago</small>
+              </div>
+            </div>
+            <div class="m-b">
+              <a class="pull-left thumb-xs avatar"><img src="../../static/img/a2.jpg" th:src="@{/img/a2.jpg}" alt="..."></img></a>
+              <div class="clear">
+                <div class="pos-rlt wrapper-sm b b-light r m-l-sm">
+                  <span class="arrow left pull-up"></span>
+                  <p class="m-b-none">Great!</p>
+                </div>
+                <small class="text-muted m-l-sm"><i class="fa fa-ok text-success"></i>Just Now</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper m-t b-t b-light">
+        <form class="m-b-none">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Say something"></input>
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">SEND</button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="app-footer wrapper b-t bg-light">
+    <span class="pull-right">{{app.version}} <a href="#" ui-scroll="app" class="m-l-sm text-muted"><i class="fa fa-long-arrow-up"></i></a></span>
+    &copy; 2017 上海简舍互联网科技有限公司
+  </div>
+  <div data-ng-include=" 'tpl/blocks/settings.html' " class="settings panel panel-default">
+  </div>
+</div>
+<script src="../../static/js/sms/sms.js"
+        th:src="@{/js/sms/sms.js}"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+package com.whiteplanet.admin.service.message.jg.push.remote;
+
+import cn.jiguang.common.resp.APIConnectionException;
+import cn.jiguang.common.resp.APIRequestException;
+import cn.jiguang.common.resp.DefaultResult;
+import com.whiteplanet.admin.service.message.jg.SlowTests;
+import com.whiteplanet.push.jg.JPushClient;
+import com.whiteplanet.push.jg.push.model.Message;
+import com.whiteplanet.push.jg.push.model.Platform;
+import com.whiteplanet.push.jg.push.model.PushPayload;
+import com.whiteplanet.push.jg.push.model.audience.Audience;
+import com.whiteplanet.push.jg.push.model.notification.Notification;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.experimental.categories.Category;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
+
+@Category(SlowTests.class)
+public class SpecialCharacterTest extends BaseRemotePushTest {
+	
+	public static final char[] SPECIAL_CHARS = new char[] {'`', '~', '!', '@', '#', '$', '%', 
+	    '%', '^', '&', '*', '(', ')', '-', '_', '+', '=', '{', '}', '[', ']', 
+	    '|', '\\', ':', ';', '"', '\'', '<', '>', ',', '.', '?', '/'};
+	
+	public int sendMessage(String content) {
+	    Message message = Message.newBuilder()
+	            .setMsgContent(content)
+	            .setTitle("title").build();
+	    
+	    PushPayload payload = PushPayload.newBuilder()
+	            .setPlatform(Platform.all())
+	            .setAudience(Audience.alias("special_c"))
+	            .setMessage(message)
+	            .build();
+	    try {
+            _client.sendPush(payload);
+        } catch (APIConnectionException e) {
+            e.printStackTrace();
+        } catch (APIRequestException e) {
+            return e.getErrorCode();
+        }
+	    return 0;
+	}
+	
+    public int sendNotification(String alert) {
+        PushPayload payload = PushPayload.newBuilder()
+                .setPlatform(Platform.all())
+                .setAudience(Audience.alias("special_c"))
+                .setNotification(Notification.alert(alert))
+                .build();
+        try {
+            _client.sendPush(payload);
+        } catch (APIConnectionException e) {
+            e.printStackTrace();
+        } catch (APIRequestException e) {
+            return e.getErrorCode();
+        }
+        return 0;
+    }
+    
+    
+    @BeforeClass
+    public static void prepareAudience() throws Exception {
+    	JPushClient jpushClient = new JPushClient(MASTER_SECRET, APP_KEY);
+    	DefaultResult result = jpushClient.updateDeviceTagAlias(REGISTRATION_ID3, "special_c", null, null);
+    	assertThat(result.isResultOK(), is(true));
+    }
+    
+	@Test
+    public void testCharacters() {
+		String prefix = "JPush Special Character tests - ";
+		
+		for (char c : SPECIAL_CHARS) {
+		    String msgContent = prefix + c;
+	        assertEquals(0, sendNotification(msgContent));
+		}
+		
+        for (char c : SPECIAL_CHARS) {
+            String msgContent = prefix + c;
+            assertEquals(0, sendMessage(msgContent));
+        }
+        
+		
+	}
+}
+
+

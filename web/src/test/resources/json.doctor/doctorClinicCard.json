@@ -1,0 +1,72 @@
+//医生个人主页信息
+{
+  "doctor": {
+    "images": [
+      {
+        "sort": 3,
+        "pubFileId": "00423a36ac9a48c2ab634aaa9b20feaf"
+      },
+      {
+        "sort": 1,
+        "pubFileId": "4ae0abfe5df04fed944a748de678ecf9"
+      }
+    ],
+    "identifyRemarks": "测试用例",
+    "identifyStatus": 0,
+    "title": "助理医师",
+    "faceImage": "34077376e10147d4bcda1b69a1621bf1",
+    "node": "上海tt",
+    "money": 0,
+    "credits": 5,
+    "name": "在家",
+    "id": "e6d7662bf1df444f938f6aac15b890ec",
+    "department": "临床试验中心",
+    "hospital": "上海交通大学医学院附属新华医院",
+    "thumbsUp": 0
+  },
+  "clinic": {
+    "departmentCount": 0,
+    "name": "听了你一个人在一起了",
+    "id": "cf7725bf10c1439f80b77c0499839318",
+    "doctorRecive": 47,
+    "doctorCount": 0,
+    "doctorRef": 40
+  },
+  "outpatient": [
+    {
+      "week": 2,
+      "stage": 0,
+      "kind": "专家门诊"
+    },
+    {
+      "week": 2,
+      "stage": 2,
+      "kind": "专病门诊"
+    },
+    {
+      "week": 4,
+      "stage": 1,
+      "kind": "专病门诊"
+    },
+    {
+      "week": 2,
+      "stage": 1,
+      "kind": "垃圾门诊"
+    },
+    {
+      "week": 1,
+      "stage": 0,
+      "kind": "专家门诊"
+    }
+  ],
+  "illness": [
+    {
+      "name": "没病",
+      "id": "0399cc72d834440293fe84a789ec0c5e"
+    },
+    {
+      "name": "风心病",
+      "id": "90c2e35f9aec11e7a9ff408d5c916e3f"
+    }
+  ]
+}

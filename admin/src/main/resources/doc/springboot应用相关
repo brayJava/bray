@@ -1,0 +1,11 @@
+1、#开发时设置为false，页否则看不到实时的面
+    spring.thymeleaf.cache=false
+
+2、方式一，引入org.springframework.boot 的spring-boot-devtools包实现热部署，Intellij idea在非run和debug时，不会进行编译
+   在热部署下将修改的文件重新编译加载一遍，重启时间快。
+
+   方式二,使用快捷设置ctrl+shift+f9，重新加载资源文件，如果是静态文件，只会更新文件读取；如果是修改的后台文件，则会项目
+   会重新加载修改的文件，并重启项目。
+
+3、springboot 启动日志级别为默认为info，如果设置为error则不会控制台日志输出不会打印处端口号信息，需要配置
+   logging.level.root=info

@@ -1,0 +1,26 @@
+{
+  "isConstranintUpdate": 1,
+  "createTime": 1531465459000,
+  "updateTime": 1531465460000,
+  "id": 2,
+  "appVersionContents": [{
+    "appVersionId": 2,
+    "createTime": 1531463879000,
+    "updateTime": 1531463883000,
+    "id": 1,
+    "content": "我要强更啦"
+  }, {
+    "appVersionId": 2,
+    "createTime": 1531463926000,
+    "updateTime": 1531463929000,
+    "id": 2,
+    "content": "我要强更啦啦啦啦"
+  }, {
+    "appVersionId": 2,
+    "createTime": 1531463939000,
+    "updateTime": 1531463941000,
+    "id": 3,
+    "content": "法法师"
+  }],
+  "version": "v2.0.0"
+}

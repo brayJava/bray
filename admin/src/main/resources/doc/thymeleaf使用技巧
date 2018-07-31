@@ -1,0 +1,53 @@
+一、标签的使用规范：
+      1、themeleaf文件的引用： link链接资源，
+                <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.7/css/bootstrap.min.css"
+                                    th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"
+         * href= 表示默认链接资源，静态加载css文件
+         * th: href  表示themeleaf动态加载css文件
+
+                 <script src="http://cdn.jsdelivr.net/webjars/jquery/3.2.1/jquery.min.js"
+                        th:src="@{/webjars/jquery/3.2.1/jquery.min.js}"></script>
+          * src= 表示默认链接资源，静态加载
+          * src: href  表示themeleaf动态加载文件
+
+
+    2,表达式的应用：
+
+       1> ${}  变量表达式，用于访问容器上下文环境中的变量，功能同jstl中${}。
+       2> *{}  选择表达式（星号表达式）。选择表达式与变量表达式有一个重要的区别：选择表达式计算的是选定的对象，而不是整个环境变量映射。也就是：只要是没有选择的对象，选择表达式与变量表达式的语法是完全一样的。那什么是选择的对象呢？是一个：th:object对象属性绑定的对象。
+       3> #{}  消息表达式（井号表达式，资源表达式）。通常与th:text属性一起使用，指明声明了th:text的标签的文本是#{}中的key所对应的value，而标签内的文本将不会显示
+       4> @{}  超链接url表达式。
+
+   3、自定义标签属性
+      如：<span th:attr="myDate=${#dates.format(curDate, 'yyyy-mm-dd')}, myMoney=${money}"></span>
+      说明： 在页面上查看源代码可以看到：<span myMoney="91.6059494319957" myDate="2016-31-02"></span>，说明自定义属性用：th:attr，多个属性用,隔开。
+
+    4、thymeleaf中，javascript使用，要严格按照规定格式写，一般格式为：
+
+        <script th:inline="javascript">
+            /*<![CDATA[*/
+              //    分页中间页限制
+              var beginPage;
+              var endPage;
+              var totalPages = [[${pageInfoDto.totalPages}]] ;
+              var pageNum = [[${pageInfoDto.pageNum}]];
+              if(totalPages <= 6) {
+                  beginPage = 1;
+                  endPage = totalPages;
+              }
+              if(totalPages > 6 ) {
+                  beginPage = pageNum -1;
+                  endPage = pageNum + 3;
+                  if(beginPage - 1 <= 0) {
+                      beginPage = 1;
+                      endPage = 6;
+                  } else if (endPage > totalPages) {
+                      beginPage = totalPages -5;
+                      endPage = totalPages;
+                  }
+              }
+            /*]]>*/
+
+    5、使用layout布局对项目局部信息进行异步刷新，ajax请求可返回对应的html模板，在js中对对应html位置进行
+       替换，即可刷新信息 使用方法见本项目 template/indexListT.html,tamplate/layout.html
+

@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Inherit defaults from Spring Boot -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.8.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <!--主工程信息，所有子module都引用这个-->
+    <groupId>com.whiteplanet</groupId>
+    <artifactId>whiteplanet</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <modules>
+        <module>web</module>
+        <module>admin</module>
+        <module>mapper</module>
+        <module>common</module>
+        <module>task</module>
+        <module>order</module>
+        <module>usrauth</module>
+        <module>admin-mapper</module>
+        <module>backward-manage</module>
+        <module>backward-mapper</module>
+    </modules>
+
+
+    <!--统一管理子包的版本-->
+    <dependencyManagement>
+        <dependencies>
+
+            <!--!!!管理了springboot所需的所有jar包版本号!!!-->
+            <!--如果子module需要用jar包，可以先来这里查一下，如果有就直接引入，不用写版本号，如<mysql-connector-java>包!!!-->
+            <!--!!!规避了冲突!!!-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>1.5.8.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+    <!--remove for release-->
+    <!--！！！！！snapshots和releases都一定要设置成 false不然老是从服务器下载-->
+    <repositories>
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+            <snapshots>
+                <enabled>false</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+                <!--避免每次都更新-->
+                <updatePolicy>daily</updatePolicy>
+            </releases>
+        </repository>
+
+    </repositories>
+
+</project>
